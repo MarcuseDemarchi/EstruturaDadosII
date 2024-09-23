@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roteador de Cidades</title>
+    <style>
+        /* Estilos CSS */
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <select id="origem">
+        <option value="Rio do Sul">Rio do Sul</option>
+        <option value="Trombudo Central">Trombudo Central</option>
+        <option value="Pouso Redondo">Pouso Redondo</option>
+        <option value="Ituporanga">Ituporanga</option>
+        <option value="Vidal Ramos">Vidal Ramos</option>
+        <option value="Presidente Nereu">Presidente Nereu</option>
+        <option value="Ibirama">Ibirama</option>
+        <option value="Presidente Getúlio">Presidente Getúlio</option>
+        <option value="Agrolândia">Agrolândia</option>
+        <option value="Lontras">Lontras</option>
+        <option value="Braço do Trombudo">Braço do Trombudo</option>
+        <option value="Vidal Ramos ">Vidal Ramos</option>
+        <option value="Vidal Ramos ">Vidal Ramos</option>
+        <option value="Vidal Ramos ">Vidal Ramos</option>
+    </select>
+    <select id="destino">
+        <option value="São Paulo">São Paulo</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="Belo Horizonte">Belo Horizonte</option>
+    </select>
+    <button onclick="findShortestPath()">Encontrar Menor Caminho</button>
+    <canvas id="myCanvas" width="600" height="400"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
