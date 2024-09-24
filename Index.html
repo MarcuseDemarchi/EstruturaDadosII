@@ -2,37 +2,56 @@
 <html>
 <head>
     <title>Roteador de Cidades</title>
-    <style>
-        /* Estilos CSS */
-        canvas {
-            border: 1px solid black;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <select id="origem">
-        <option value="Rio do Sul">Rio do Sul</option>
-        <option value="Trombudo Central">Trombudo Central</option>
-        <option value="Pouso Redondo">Pouso Redondo</option>
-        <option value="Ituporanga">Ituporanga</option>
-        <option value="Vidal Ramos">Vidal Ramos</option>
-        <option value="Presidente Nereu">Presidente Nereu</option>
-        <option value="Ibirama">Ibirama</option>
-        <option value="Presidente Getúlio">Presidente Getúlio</option>
-        <option value="Agrolândia">Agrolândia</option>
-        <option value="Lontras">Lontras</option>
-        <option value="Braço do Trombudo">Braço do Trombudo</option>
-        <option value="Vidal Ramos ">Vidal Ramos</option>
-        <option value="Vidal Ramos ">Vidal Ramos</option>
-        <option value="Vidal Ramos ">Vidal Ramos</option>
-    </select>
-    <select id="destino">
-        <option value="São Paulo">São Paulo</option>
-        <option value="Rio de Janeiro">Rio de Janeiro</option>
-        <option value="Belo Horizonte">Belo Horizonte</option>
-    </select>
-    <button onclick="findShortestPath()">Encontrar Menor Caminho</button>
-    <canvas id="myCanvas" width="600" height="400"></canvas>
-    <script src="script.js"></script>
+    <div id="container_main">
+        <h1 id="title_main">Calculo de Dijkstra</h1>
+        <div id="container_selection">
+            <select id="origem">
+                <option value="AGR">Agronômica</option>
+                <option value="RSL">Rio do Sul</option>
+                <option value="TCO">Trombudo Central</option>
+                <option value="PDR">Pouso Redondo</option>
+                <option value="ITU">Ituporanga</option>
+                <option value="VRA">Vidal Ramos</option>
+                <option value="PNR">Presidente Nereu</option>
+                <option value="IBR">Ibirama</option>
+                <option value="PGT">Presidente Getúlio</option>
+                <option value="AGD">Agrolândia</option>
+                <option value="LON">Lontras</option>
+                <option value="BTO">Braço do Trombudo</option>
+                <option value="IMB">Imbuia</option>
+                <option value="MDC">Mirim Doce</option>
+                <option value="DEM">Dona Emma</option>
+                <option value="JBT">José Boiteux</option>        
+                <option value="TAI">Taió</option>        
+            </select>
+            <select id="destino">
+                <option value="AGR">Agronômica</option>
+                <option value="RSL">Rio do Sul</option>
+                <option value="TCO">Trombudo Central</option>
+                <option value="PDR">Pouso Redondo</option>
+                <option value="ITU">Ituporanga</option>
+                <option value="VRA">Vidal Ramos</option>
+                <option value="PNR">Presidente Nereu</option>
+                <option value="IBR">Ibirama</option>
+                <option value="PGT">Presidente Getúlio</option>
+                <option value="AGD">Agrolândia</option>
+                <option value="LON">Lontras</option>
+                <option value="BTO">Braço do Trombudo</option>
+                <option value="IMB">Imbuia</option>
+                <option value="MDC">Mirim Doce</option>
+                <option value="DEM">Dona Emma</option>
+                <option value="JBT">José Boiteux</option>        
+                <option value="TAI">Taió</option>         
+            </select>                    
+        </div>
+        <button onclick="findShortestPath()">Encontrar Menor Caminho</button>
+        <div class="canvas">
+            <canvas id="myCanvas" width="800" height="800"></canvas>
+        </div>
+        <script src="script.js"></script>
+    </div>    
 </body>
 </html>

@@ -1,0 +1,19 @@
+canvas {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 600px;
+    width: 800px;    
+}
+
+#container_main{
+    border: 1px solid black;
+    height: 800px;
+    width: 1000px;
+    border-radius: 10px;
+}
+
+#container_selection,#title_main,.canvas,#container_main{
+    text-align: center;
+}
+
+
